@@ -4,7 +4,7 @@ env:
     - GH_USER: nelson
     - DEPLOY_ENV: GH_PAGES
 node_js:
-  - "7.0.0"
+  - "8.15.1"
 
 cache:
   directories:
