@@ -1,0 +1,1 @@
+"use strict";var app={};app.partial={},($||jQuery)&&(app.$=$.noConflict()||jQuery.noConflict()),function(a){a(function(){a.each(app.partial,function(p,n){var t=a("[role="+p+"]");n(a,t)})})}(app.$);
