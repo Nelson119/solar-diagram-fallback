@@ -1,0 +1,116 @@
+<div class="flex">
+
+	<div class="layout mx-auto row wrap">
+
+		<div class="flex center-column">
+			<div>
+				<div class="small-chart">
+					<div class="layout">
+						<div class="flex">
+							<h3>年度发电量对比<small>(kW-h)</small></h3>
+						</div>
+						<div class="flex align-end text-right">
+							<div class="legend"><img src="img/chartsign-a@3x.png"> <span>实际发电</span></div>
+							<div class="legend"><img src="img/chartsign-b@3x.png"> <span>预计发电</span></div>
+							<div class="legend"><img src="img/chartsign-c@3x.png"> <span>标准值</span></div>
+						</div>
+					</div>
+					@@include('../components/chart.html',{
+						"chartId": "yearChart",
+						"type3": "bar",
+						"data1": "[300000, 260000, 260000, 190000, 200000]",
+						"data2": "[290000, 240000, 270000, 180000, 240000]",
+						"data3": "[280000, 250000, 280000, 160000, 290000]",
+						"labels": "[2016, 2017, 2018, 2019, 2020]"
+					})
+				</div>
+				<div class="small-chart">
+					<div class="layout">
+						<div class="flex">
+							<h3 class="text-no-wrap">今日各小时发电功率趋势<small>(kW)</small></h3>
+						</div>
+						<div class="flex align-end text-right text-no-wrap">
+							<div class="legend"><img src="img/chartsign-d@3x.png"> <span>实际发电</span></div>
+							<div class="legend"><img src="img/chartsign-b@3x.png"> <span>预计发电</span></div>
+							<div class="legend"><img src="img/chartsign-c@3x.png"> <span>标准值</span></div>
+						</div>
+					</div>
+					@@include('../components/chart.html',{
+						"chartId": "hourChart",
+						"type3": "line",
+						"data1": "[300000, 260000, 260000, 190000, 200000]",
+						"data2": "[290000, 240000, 270000, 180000, 240000]",
+						"data3": "[280000, 250000, 280000, 160000, 290000]",
+						"labels": "[2016, 2017, 2018, 2019, 2020]"
+					})
+				</div>
+			</div>
+		</div>
+		<div class="flex right-column">
+			<div>
+				<div class="small-chart">
+					<div class="layout">
+						<div class="flex">
+							<h3>月发电量对比<small>(kW-h)</small></h3>
+						</div>
+						<div class="flex align-end text-right">
+							<div class="legend"><img src="img/chartsign-a@3x.png"> <span>实际发电</span></div>
+							<div class="legend"><img src="img/chartsign-b@3x.png"> <span>预计发电</span></div>
+							<div class="legend"><img src="img/chartsign-c@3x.png"> <span>标准值</span></div>
+						</div>
+					</div>
+					@@include('../components/chart.html',{
+						"chartId": "monthChart",
+						"type3": "bar",
+						"data1": "[300000, 260000, 260000, 190000, 200000]",
+						"data2": "[290000, 240000, 270000, 180000, 240000]",
+						"data3": "[280000, 250000, 280000, 160000, 290000]",
+						"labels": "[2016, 2017, 2018, 2019, 2020]"
+					})
+				</div>
+				<div class="small-chart">
+					<div class="layout">
+						<div class="flex">
+							<h3>各季度发电量对比<small>(kW-h)</small></h3>
+						</div>
+						<div class="flex align-end text-right">
+							<div class="legend"><img src="img/chartsign-a@3x.png"> <span>实际发电</span></div>
+							<div class="legend"><img src="img/chartsign-b@3x.png"> <span>预计发电</span></div>
+							<div class="legend"><img src="img/chartsign-c@3x.png"> <span>标准值</span></div>
+						</div>
+					</div>
+					@@include('../components/chart.html',{
+						"chartId": "quarterChart",
+						"type3": "bar",
+						"data1": "[300000, 260000, 260000, 190000, 200000]",
+						"data2": "[290000, 240000, 270000, 180000, 240000]",
+						"data3": "[280000, 250000, 280000, 160000, 290000]",
+						"labels": "[2016, 2017, 2018, 2019, 2020]"
+					})
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex full-column">
+		<div class="small-chart">
+			<div class="layout">
+				<div class="flex">
+					<h3>本月每日发电趋势比较<small>(kW-h)</small></h3>
+				</div>
+				<div class="flex align-end text-right">
+					<div class="legend"><img src="img/chartsign-d@3x.png"> <span>实际发电</span></div>
+					<div class="legend"><img src="img/chartsign-b@3x.png"> <span>预计发电</span></div>
+					<div class="legend"><img src="img/chartsign-c@3x.png"> <span>标准值</span></div>
+				</div>
+			</div>
+			@@include('../components/chart.html',{
+				"chartId": "dayChart",
+				"type3": "line",
+				"data1": "[300000, 260000, 260000, 190000, 200000]",
+				"data2": "[290000, 240000, 270000, 180000, 240000]",
+				"data3": "[280000, 250000, 280000, 160000, 290000]",
+				"labels": "[2016, 2017, 2018, 2019, 2020]"
+			})
+		</div>
+	</div>
+</div>

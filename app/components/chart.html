@@ -1,0 +1,64 @@
+<div class="canvas-container">
+    <canvas id="@@chartId" role="@@chartId"></canvas>
+</div>
+<script>
+    app.partial['@@chartId'] = function($, cont){
+        var ctx = document.getElementById('@@chartId').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+                defaultFontColor:'#fff',
+
+            // The data for our dataset
+            data: {
+                labels: @@labels,
+                datasets: [{
+                    type: 'line',
+                    backgroundColor: '#ecc83c',
+                    borderColor: '#ecc83c',
+                    fill: false,
+                    data: @@data1
+                },{
+                    type: 'line',
+                    backgroundColor: '#fe92a5',
+                    borderColor: '#fe92a5',
+                    fill: false,
+                    data: @@data2
+                },{
+                    type: '@@type3',
+                    backgroundColor: '#67bff4',
+                    borderColor: '#67bff4',
+                    fill: false,
+                    data: @@data3
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            fontColor: '#9a9a9a'
+                        },
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: '#9a9a9a'
+                        },
+                    }]
+                },
+                title:{
+                    fontColor: '#9a9a9a'
+                },
+                legend: {
+                    display: false,
+                },
+                tooltips:{
+                    enabled: false
+                },
+                maintainAspectRatio: false,
+            }
+        });
+    }
+</script>

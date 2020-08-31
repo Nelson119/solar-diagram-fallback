@@ -1,0 +1,13 @@
+header {
+	font-size: #{(24/1920 * 100)}vw;
+	height: #{(84/1920 * 100)}vw;
+	background: url(../img/bg_header.png) no-repeat center/cover;
+    padding: 4px 40px;
+	img {
+	  // width: #{174/1920 * 100}vw !important;
+	  height: 36px;
+	  align-self: center;
+	  display: flex;
+	}
+
+}

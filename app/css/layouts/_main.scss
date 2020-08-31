@@ -1,0 +1,147 @@
+
+.left-column {
+    width: 432px;
+    width: #{(432/1920 * 100)}vw !important;
+    padding: 0;
+    margin-left: #{(32/1920 * 100)}vw !important;
+    .icon {
+      width: #{(72/1920 * 100)}vw !important;
+      height: #{(72/1920 * 100)}vw !important;
+      object-fit: contain;
+    }
+    .icon-wrap {
+      margin-top: #{(80/1920 * 100)}vw !important;
+      // width: #{(192/1920 * 100)}vw !important;
+      &:nth-child(2) ~ .icon-wrap {
+        margin-top: #{(32/1920 * 100)}vw !important;
+      }
+      &:nth-child(2n + 2) {
+        padding-left: #{(16/1920 * 100)}vw !important;
+      }
+      label {
+        color: #80caf6;
+        margin: #{(12/1920 * 100)}vw auto #{(4/1920 * 100)}vw !important;
+      }
+      span {
+        font-size: #{(30/1920 * 100)}vw;
+        .unit {
+          font-size: #{(20/30)}em;
+        }
+      }
+    }
+    .v-card {
+      margin-top: #{(45/1920 * 100)}vw !important;
+      background: url("../img/bg_chart01_a.png") no-repeat center/105% 105%
+        transparent !important;
+      border-radius: 8px !important;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25), inset 0 2px 2px 0 #75a7c7 !important;
+      .v-card__title {
+          display: flex;
+        font-size: #{(24/1920 * 100)}vw;
+        padding: #{(24/1920 * 100)}vw 0 #{(24/1920 * 100)}vw !important;
+        line-height: 1em;
+        margin: 0;
+      }
+      .v-card__text {
+        padding: 0 1em 1px;
+        font-size: #{(20/1920 * 100)}vw;
+        .number {
+          font-size: #{(30/1920 * 100)}vw;
+        }
+        .unit {
+          font-size: #{(20/1920 * 100)}vw;
+        }
+        .layout {
+          margin-bottom: #{(40/1920 * 100)}vw !important;
+        }
+      }
+    }
+    .v-avatar {
+      height: #{(32/1920 * 100)}vw !important;
+      width: #{(32/1920 * 100)}vw !important;
+      min-width: #{(32/1920 * 100)}vw !important;
+      line-height: #{(32/1920 * 100)}vw;
+      margin-right: 0.2em;
+      color: #fff;
+    }
+    .color_1 {
+      .v-avatar {
+        background: #b06383;
+      }
+    }
+    .color_2 {
+      .v-avatar {
+        background: #8a63b0;
+      }
+    }
+    .color_3 {
+      .v-avatar {
+        background: #6e7dc2;
+      }
+    }
+    .color_4 {
+      .v-avatar {
+        background: #7ddadb;
+      }
+    }
+    .color_5 {
+      .v-avatar {
+        background: #9edb7d;
+      }
+    }
+  }
+  .center-column {
+    width: #{680/1920 * 100}vw !important;
+    padding-top: #{32/1920 * 100}vw !important;
+    padding-left: #{32/1920 * 100}vw !important;
+    padding-right: #{16/1920 * 100}vw !important;
+  }
+  .right-column {
+    width: #{680/1920 * 100}vw !important;
+    padding-top: #{32/1920 * 100}vw !important;
+    padding-right: #{32/1920 * 100}vw !important;
+    padding-left: #{16/1920 * 100}vw !important;
+  }
+  .full-column {
+    width: #{1392/1920 * 100}vw !important;
+    // height: #{296/1920 * 100}vw !important;
+    // padding-right: #{32/1920 * 100}vw !important;
+    padding-left: #{32/1920 * 100}vw !important;
+    .small-chart {
+      height: #{306/1920 * 100}vw !important;
+      background: url("../img/bg_chart03_a.png") no-repeat center/105% 105%
+        transparent !important;
+    }
+  }
+  .small-chart {
+    background: url("../img/bg_chart02_a.png") no-repeat center/105% 105%
+      transparent !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25), inset 0 2px 2px 0 #75a7c7 !important;
+    height: #{(286/1920 * 100)}vw !important;
+    margin-bottom: #{32/1920 * 100}vw !important;
+    padding: #{(16/1920 * 100)}vw #{24/1920 * 100}vw #{28/1920 * 100}vw !important;
+    h3 {
+      font-size: 1em;
+      margin: 0;
+      small {
+        font-size: #{(18/24)}em;
+        margin-left: 0.3em;
+        color: inherit;
+      }
+    }
+    .legend {
+      font-size: #{(18/24)}em;
+      line-height: 1em;
+      display: inline-block;
+      img {
+        height: #{22/1920 * 100}vw !important;
+        width: #{22/1920 * 100}vw !important;
+        vertical-align: middle;
+      }
+    }
+    .canvas-container{
+      height: #{(220/1920 * 100)}vw !important;
+    }
+  }
+  
